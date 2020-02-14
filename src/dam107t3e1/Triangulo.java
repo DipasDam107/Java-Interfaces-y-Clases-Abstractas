@@ -16,10 +16,6 @@ public class Triangulo extends Figura2D{
         this.estilo=estilo;
     }
 
-    Triangulo(Triangulo tri){
-        super(new Figura2D(tri.getAlto(),tri.getAncho(), tri.getNombre()));
-        this.estilo=tri.getEstilo();
-    }
     public String getEstilo() {
         return estilo;
     }
@@ -28,4 +24,7 @@ public class Triangulo extends Figura2D{
         return (this.getAlto()*this.getAncho())/2d;
     }
     
+    public double precio(float precioMetroCuadrado){
+        return this.area()*precioMetroCuadrado;
+    }
 }

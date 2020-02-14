@@ -27,4 +27,9 @@ public class Rectangulo extends Figura2D {
     public double area(){
         return this.getAlto()*this.getAncho();
     }
+    
+    public double precio(float precioMetroCuadrado){
+        return this.area()*precioMetroCuadrado;
+    }
+    
 }

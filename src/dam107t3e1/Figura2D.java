@@ -1,7 +1,7 @@
 package dam107t3e1;
 
 
-public class Figura2D {
+public abstract class Figura2D {
     private double ancho;
     private double alto;
     private String nombre;
@@ -55,9 +55,10 @@ public class Figura2D {
     }
     
     
-    
-    
     public void verDim(){
         System.out.printf("Alto : %.2f Ancho : %.2f \n", this.alto, this.ancho);
     }
+    
+    public abstract double area();
+    public abstract double precio(float precioMetroCuadrado);
 }
