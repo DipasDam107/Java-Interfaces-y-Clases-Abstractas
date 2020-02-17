@@ -11,16 +11,32 @@ package dam107t3e5;
  */
 public class AlfilAjedrez extends PiezaAjedrez{
     
-    AlfilAjedrez(){
-        super(0, 0);
+    AlfilAjedrez(int fila, int columna){
+        super(fila, columna);
     }
     
     @Override
     public boolean mover(int filaDestino, int colDestino) {
-        if(Math.abs(fila-filaDestino)==Math.abs(columna-colDestino))
-             return true;
+        if(Math.abs(fila-filaDestino)==Math.abs(columna-colDestino)){
+            this.columna=colDestino;
+            this.fila=filaDestino;
+            return true;
+        }
         else
              return false;
     }
+
+    @Override
+    public void mover(int fuera) {
+            this.columna=fuera;
+            this.fila=fuera;    
+    }
+
+    @Override
+    public void mover() {
+            this.columna=0;
+            this.fila=0;      }
+    
+    
     
 }

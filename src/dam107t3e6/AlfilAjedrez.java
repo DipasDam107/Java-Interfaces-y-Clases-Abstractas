@@ -3,38 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dam107t3e5;
+package dam107t3e6;
+
+import dam107t3e5.*;
 
 /**
  *
  * @author dam107
  */
-public class TorreAjedrez extends PiezaAjedrez {
+public class AlfilAjedrez extends PiezaAjedrez{
     
-    TorreAjedrez(int fila, int columna){
+    AlfilAjedrez(int fila, int columna){
         super(fila, columna);
     }
     
     @Override
     public boolean mover(int filaDestino, int colDestino) {
-        if(filaDestino==this.fila || colDestino==this.columna){
-            this.fila=filaDestino;
+        if(Math.abs(fila-filaDestino)==Math.abs(columna-colDestino)){
             this.columna=colDestino;
+            this.fila=filaDestino;
             return true;
         }
-        else return false;
-           
+        else
+             return false;
     }
-    
+
     @Override
     public void mover(int fuera) {
             this.columna=fuera;
             this.fila=fuera;    
     }
-    
-     @Override
+
+    @Override
     public void mover() {
             this.columna=0;
             this.fila=0;      }
+    
+    
     
 }

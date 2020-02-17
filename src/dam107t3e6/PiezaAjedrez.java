@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dam107t3e5;
+package dam107t3e6;
+
+import dam107t3e5.*;
 
 /**
  *
