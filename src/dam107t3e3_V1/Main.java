@@ -1,7 +1,8 @@
 /*
-Diseña una interfaz llamada Figura3D con método volumen (). Crea clases: Esfera y Prisma
-Rectangular que implementen el método de la interfaz y con los atributos que creas necesarios. Haz
-un programa que cree una instancia de cada una de las 2 figuras y muestre cuál de ellas ocupa más. 
+Haz una nueva versión de las clases del ejercicio anterior (añádele el sufijo _v2). Añádele a la
+clase base el método abstracto superficie (). Crea una nueva clase Cilindro y haz que implemente los
+métodos de la superclase. Haz un programa que permita crear una instancia de cada una de las 3
+figuras y nos muestre cuál tiene más superficie. 
  */
 package dam107t3e3_V1;
 
