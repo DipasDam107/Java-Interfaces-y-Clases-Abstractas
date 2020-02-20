@@ -14,6 +14,7 @@ public class HabitacionSuite extends HabitacionPadre{
          if(this.isOcupadas()){
             this.setOcupadas(false);
             long dias = ChronoUnit.DAYS.between(this.getFechaLlegada(),LocalDate.now());
+                if(dias<1) dias=1;
             return 150*dias*this.personas;
         }
         else return -1;
